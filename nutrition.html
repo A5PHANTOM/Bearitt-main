@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition - BEARITT</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Zen Dot Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="nutrition.css">
+    <!-- Link to Footer CSS -->
+    <link rel="stylesheet" href="footer/footer.css">
+    <link rel="stylesheet" href="pageloading.css">      
+    <link rel="stylesheet" href="navibar.css">  
+</head>
+
+<body>
+    <div class="loading-screen" id="loading-screen">
+       
+        <img src="assets/logo white bearitt.png" alt="FitLife Logo" class="loading-logo"> <!-- Logo centered on loading screen --> 
+       
+     
+    </div>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-content">
+                <!-- Logo -->
+                <a href="#" class="logo">
+                    <img src="assets/bearitt logo.png" alt="Logo" />
+                </a>
+    
+                <!-- Mobile Toggle Button -->
+                <button id="mobile-menu-toggle" class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </button>
+    
+                <!-- Desktop Navigation Links -->
+                <ul class="navbar-links" id="navbar-links">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="nutrition.html">Services</a></li>
+                    <li><a href="#tools">Tools</a></li>
+                    <li><a href="community.html">Community</a></li>
+                    <li><a href="#contact">Fitness</a></li>
+                    <li><a href="#contact">Trainer</a></li>
+                    <li><a href="#contact">Shop</a></li>
+                </ul>
+                <div class="user-info">
+                    <span class="user-email">?php echo $user_email; ?</span>
+                    <a href="logout.php" class="btn btn-danger ml-3">Sign Out</a>
+                </div>
+            </div>
+        </nav>
+    
+        <!-- Mobile Drawer -->
+    <div id="mobile-drawer" class="mobile-drawer">
+        <!-- Close Button -->
+        <button id="close-drawer" class="close-drawer">
+            <i class="fas fa-times"></i>
+        </button>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#tools">Tools</a></li>
+            <li><a href="community.html">Community</a></li>
+            <li><a href="#contact">Fitness</a></li>
+            <li><a href="#contact">Trainer</a></li>
+            <li><a href="#contact">Shop</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <main class="container mt-5">
+        <!-- Hero Section -->
+        <section class="jumbotron text-center bg-light">
+            <h1 class="display-4">Optimize Your Diet for Peak Performance</h1>
+            <p class="lead">Discover meal plans, healthy recipes, and nutrition tips tailored for your fitness goals.</p>
+        </section>
+
+        <!-- Meal Plans Section -->
+        <section class="meal-plans my-5">
+            <h2 class="text-center text-success">Meal Plans</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/womendiet.webp" class="card-img-top" alt="Women's Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Women's Diet Plan</h3>
+                            <p class="card-text">Tailored nutrition plan for women to support overall wellness and fitness goals.</p>
+                            <a href="womendiet.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/bulkdiet.webp" class="card-img-top" alt="Bulk Diet Plan Image">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Bulk Diet Plan</h3>
+                            <p class="card-text">A high-calorie, nutrient-dense meal plan designed for muscle growth and bulking up.</p>
+                            <a href="bulk.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/vegan.webp" class="card-img-top" alt="Vegan Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Vegan Plan</h3>
+                            <p class="card-text">Plant-based nutrition to sustainably fuel your workouts and support long-term health.</p>
+                            
+                            <a href="#" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <!-- Keto Diet Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/cuttingdiet.webp" class="card-img-top" alt="Cutting Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Cutting Diet Plan</h3>
+                            <p class="card-text">A low-calorie meal plan designed to help shed fat while maintaining muscle.</p>
+                            <a href="cut.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- Intermittent Fasting Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/top-view-plate-arrangement.webp" class="card-img-top" alt="Intermittent Fasting Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Intermittent Fasting</h3>
+                            <p class="card-text">A diet plan based on fasting and eating for improved metabolism and fat loss.</p>
+                            <a href="intermediatediet.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+        
+                <!-- High-Protein Plan -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/Yellow Modern Coming Soon Instagram post.webp" class="card-img-top" alt="High-Protein Diet Plan Image">
+                        <div class="card-body">
+                            <h3 class="card-title">High-Protein Plan</h3>
+                            <p class="card-text">A protein-rich diet designed to support muscle building and recovery.</p>
+                            <a href="#" class="btn btn-success">COMING SOON</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recipes Section -->
+        <section class="recipes my-5">
+            <h2 class="text-center text-success">Healthy Recipes</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/smoothi/freshness-sweetness-berry-cocktail-wooden-table-generated-by-artificial-intelligence.webp" class="card-img-top" alt="Smoothie Boost Image">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Smoothie Boost</h3>
+                            <p class="card-text">Start your day with a refreshing and energy-boosting smoothie.</p>
+                            <a href="smoothis.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/snacks/freshness-sweetness-bowl-blueberries-generated-by-ai.webp" class="card-img-top" alt="Snacks Image">
+
+                        <div class="card-body">
+                            <h3 class="card-title">Healthy Snacks</h3>
+                            <p class="card-text">Quick and easy snack ideas for energy throughout the day.</p>
+                            <a href="snacks.html" class="btn btn-success">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm">
+                        <img src="assets/Yellow Modern Coming Soon Instagram post.webp" class="card-img-top" alt="Snacks Image">
+                        <div class="card-body">
+                            <h3 class="card-title">Health Drink</h3>
+                            <p class="card-text">Start your day with a refreshing    Drink.</p>
+                            <a href="#" class="btn btn-success">COMING SOON</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Tips Section -->
+        <section class="tips my-5">
+            <h2 class="text-center text-success">Nutrition Tips</h2>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item">Stay hydrated by drinking at least 8 glasses of water daily.</li>
+                <li class="list-group-item">Incorporate a mix of macronutrients in every meal.</li>
+                <li class="list-group-item">Plan your meals ahead to avoid unhealthy choices.</li>
+                <li class="list-group-item">Listen to your body's hunger and fullness cues.</li>
+            </ul>
+        </section>
+    </main>
+
+   <!-- Footer Wrapper for Full Width Background -->
+   <div class="footer-wrapper">
+    <div class="footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <!-- Replace footer title with logo image -->
+                <div class="footer-logo">
+                    <img src="assets/logo white bearitt.png" alt="Bearitt Logo" class="footer-logo-img">
+                </div>
+                
+                <p class="footer-slogan">Join us on our mission to make 50 million people fit!</p>
+                <div class="contact-info">
+                    <i class="fas fa-envelope mail-icon"></i>
+                    <span class="email">bearitt.fit@gmail.com</span>
+                </div>
+                <div class="phone-info">
+                    <i class="fas fa-phone phone-icon"></i>
+                    <span class="phone-number">+91 9846-66-55-99</span>
+                </div>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/YourPage" target="_blank">
+                        <i class="fab fa-facebook-square"></i>
+                    </a>
+                    <a href="https://www.instagram.com/YourProfile" target="_blank">
+                        <i class="fab fa-instagram-square"></i>
+                    </a>
+                    <a href="https://twitter.com/YourProfile" target="_blank">
+                        <i class="fab fa-twitter-square"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/YourProfile" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-center">
+                <div class="footer-label">SERVICES</div>
+                <ul class="footer-links">
+                    <li><a href="#" class="footer-link">FITNESS (coming soon)</a></li>   
+                    <li><a href="nutrition.html" class="footer-link">NUTRITION</a></li>
+                </ul>
+                <h4 class="footer-tools">TOOLS</h4>
+                <ul class="footer-links">
+                    <li><a href="/footer/bmr.html" class="footer-link">BMR Calculator</a></li>
+                    <li><a href="/footer/macro.html" class="footer-link">Macro Calculator</a></li>
+                    <li><a href="/footer/bfatcalc.html" class="footer-link">Body Fat Calculator</a></li>
+                    <!-- <li><a href="#" class="footer-link">1RM Calculator</a></li> -->
+                </ul>
+            </div>
+    
+            <div class="footer-company">
+                <div class="footer-label">COMPANY</div>
+                <ul class="footer-links">
+                    <li><a href="aboutus/aboutus.html" class="footer-link">OUR STORY</a></li>
+                    <li><a href="#" class="footer-link">HELP</a></li>
+                    <li><a href="contact.html" class="footer-link">CONTACT US</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-community">
+                <div class="footer-community-label">COMMUNITY</div>
+                <ul class="footer-community-links">
+                    <li><a href="community.html" class="footer-community-link">Our Community</a></li>
+                    <li><a href="#" class="footer-community-link">Discord Channel</a></li>
+                    <li><a href="https://t.me/+LiLIgX6FZEk2NDJl" class="footer-community-link">Telegram Channel</a></li>
+                    <li><a href="https://chat.whatsapp.com/BU9eXdSU76D9VDkvzIkPn9" class="footer-community-link">WhatsApp Group</a></li>
+                </ul> 
+            </div>
+        </div>
+    </div>
+</footer>
+
+    <!-- Bootstrap JS (for interactive components) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <script>
+          // Show loading screen for 3 seconds
+          setTimeout(function() {
+            document.getElementById("loading-screen").style.display = "none"; // Hide loading screen
+            document.getElementById("content-area").classList.remove("hidden"); // Show content area
+        }, 3000); // 3000 milliseconds = 3 seconds
+
+
+        
+        </script>
+
+
+</body>
+</html>
